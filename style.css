@@ -16,10 +16,15 @@
 img {
     width: 5%;
     height: 5%;
+    margin-left: 10px;
 }
 
 header h1 {
     color: white;
+}
+
+.trybewarts-login{
+    margin-right: 10px;
 }
 
 
