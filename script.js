@@ -10,4 +10,5 @@ function login() {
   }
   }
 
- btnLogin.addEventListener("click",login) 
+//  btnLogin.addEventListener("click",login)
+const email = '';

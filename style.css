@@ -46,7 +46,7 @@ main {
   display: flex;
 }
 
-form {
+#evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
@@ -54,4 +54,8 @@ form {
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#id-imagem {
+  margin-left: 400px;
 }
