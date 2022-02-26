@@ -17,11 +17,13 @@
             <button class="btn-header" type="submit">Entrar</button>
         </form>
     </header>
+    
+
     <main class="container-flex">
+      <form action="" id="evaluation-form">
             <section id="id-formulario">
                 <div id="div-inicio">
                 <h2>Formulário De Avaliação</h2>
-                <form action="" id="evaluation-form">
                     <label for="">
                         <input type="text" placeholder="Nome">
                     </label>
@@ -41,47 +43,28 @@
                     </label>
                 </form>
                 </div>
-                <form >
                   <div id="div-familia">
                     <div class="label-family">
                       <label id="label-family">Qual sua família?</label>
-                    <label for="front">
-                      <input type="radio" name="family" value="Frontend" id="front">
-                        Família  Frontend</label>
-                    <label for="back">
-                      <input type="radio" name="family" value="Backend" id="back">
-                        Família Backend
-                    </label>
-                    <label for="full">
-                      <input type="radio" name="family" value="FullStack" id="full">
-                        Família FullStack
-                    </label>
+                      <label for="front">
+                        <input type="radio" name="family" value="Frontend" id="front">Família  Frontend
+                      </label>
+                      <label for="back">
+                        <input type="radio" name="family" value="Backend" id="back">Família Backend
+                      </label>
+                      <label for="">
+                        <input type="radio" name="family" value="FullStack" id="full">Família FullStack
+                      </label>
                     </div>
                     <div class="label-content">
                       <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label> 
-                      <div>
-                        <label for="hofs"> </label>
-                        <input type="checkbox" value="HoFs" name="content"id="hofs">
-                          HoFs
-                        <label for="jest">
-                          <input type="checkbox" value="Jest" name="content"  id="jest">
-                          Jest
-                        </label>
-                        <label for="Promises">
-                          <input type="checkbox" value="Promises" name="content"  id="Promises">
-                            Promises
-                        </label>
-                          <label for="react"></label>
-                            <input type="checkbox" value="React" name="content"  id="react">
-                              React
-                          <label for="sql">
-                            <input type="checkbox" value="SQL" name="content"  id="sql">
-                              SQL
-                          </label>
-                          <label for="python">
-                            <input type="checkbox"  value="Python" name="content" id="python">
-                              Python
-                          </label>
+                        <input type="checkbox" value="HoFs" name="content" id="hofs">HoFs
+                        <input type="checkbox" value="Jest" name="content"  id="jest">Jest
+                        <input type="checkbox" value="Promises" name="content"  id="Promises">Promises
+                        <input type="checkbox" value="React" name="content"  id="react">React
+                        <input type="checkbox" value="SQL" name="content"  id="sql">SQL
+                        <input type="checkbox"  value="Python" name="content" id="python">Python
+                      
                       </div>
                     </div>
                   </div>
@@ -94,7 +77,10 @@
             <section id="id-imagem">
                 <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="imagem Trybewarts">
             </section>
+            <form >
     </main>
+   
+
     <script src="script.js"></script>
 </body>
 </html>
