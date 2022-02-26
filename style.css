@@ -53,33 +53,13 @@ header input {
 
 main {
   display: flex;
-}
-
-<<<<<<< HEAD
-#section-main {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border: 3px red solid;
-  background-color: rgb(239, 239, 239);
+  justify-content: space-between;
 }
 
 #id-formulario {
   border: green 3px solid;
-  width: 800px;
+  max-width: 600px;
   height: auto;
-=======
-.container-flex {
-  display: flex;
-  justify-content: space-between;
-  
-}
-#id-formulario{
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
->>>>>>> 2f40392835d4233a4dc3c23adcfb4704680aaa6a
 }
 
 #evaluation-form {
@@ -117,7 +97,6 @@ main {
   max-width: 300px;
 }
 
-<<<<<<< HEAD
 #id-imagem {
   width: 500px;
   border: blue 3px solid;
@@ -139,11 +118,11 @@ footer {
   text-align: center;
   font-size: 20px;
   padding: 10px;
-=======
+
+}
 .label-content input {
   margin-left: 40px;
   
->>>>>>> 2f40392835d4233a4dc3c23adcfb4704680aaa6a
 }
 
 
@@ -151,3 +130,19 @@ footer {
 body {
   border: 1px solid red;
 }
+
+.input-date {
+  display: flex;
+  flex-direction: column;
+}
+
+#div-inicio {
+  padding: 24px 16px 48px;
+  border-bottom: 1px solid gray;
+}
+
+#div-inicio div {
+  padding: 5px;
+}
+
+
