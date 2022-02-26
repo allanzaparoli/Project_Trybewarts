@@ -17,8 +17,7 @@
             <button class="btn-header" type="submit">Entrar</button>
         </form>
     </header>
-    <main>
-        <section class="container-flex"> 
+    <main class="container-flex">
             <section id="id-formulario">
                 <div id="div-inicio">
                 <h2>Formulário De Avaliação</h2>
@@ -42,8 +41,9 @@
                     </label>
                 </form>
                 </div>
+                <form >
                   <div id="div-familia">
-                    <fieldset class="label-family">
+                    <div class="label-family">
                       <label id="label-family">Qual sua família?</label>
                     <label for="front">
                       <input type="radio" name="family" value="Frontend" id="front">
@@ -56,8 +56,8 @@
                       <input type="radio" name="family" value="FullStack" id="full">
                         Família FullStack
                     </label>
-                    </fieldset>
-                    <fieldset class="label-content">
+                    </div>
+                    <div class="label-content">
                       <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label> 
                       <div>
                         <label for="hofs"> </label>
@@ -83,9 +83,9 @@
                               Python
                           </label>
                       </div>
-                        
-                    </fieldset>
+                    </div>
                   </div>
+                </form>
                 
                 <div id="div-final">
                     
@@ -94,7 +94,6 @@
             <section id="id-imagem">
                 <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="imagem Trybewarts">
             </section>
-        </section>
     </main>
     <script src="script.js"></script>
 </body>

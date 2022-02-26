@@ -49,12 +49,14 @@ main {
 
 .container-flex {
   display: flex;
+  justify-content: space-between;
   
 }
 #id-formulario{
-  width: 45%;
+  width: 50%;
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 
 #evaluation-form {
@@ -65,22 +67,38 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
-  width: 45%;
+  width: 50%;
 }
 
-#id-imagem {
-  margin-left: 400px;
-}
+
 
 #div-familia {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  height: 25%;
+  padding: 70px 0;
+  border-bottom: 1px solid gray;
+  margin: 25px 0;
 }
+
+
 
 .label-family,
 .label-content {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   
 }
 
+.label-content div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+body {
+  border: 1px solid red;
+}
