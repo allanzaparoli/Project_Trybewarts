@@ -66,7 +66,7 @@ main {
 
 #id-formulario {
   border: green 3px solid;
-  width: 800px;
+  max-width: 600px;
   height: auto;
 }
 
@@ -106,13 +106,22 @@ main {
 .label-family {
   display: flex;
   flex-direction: column;
-  align-content: space-around;
+  justify-content: space-around;
 }
 
 .label-content {
   display: flex;
-  flex-wrap: wrap;
   max-width: 300px;
+  flex-direction: row;
+  align-content: space-around;
+  flex-wrap: wrap;
+  min-height: 100px;
+}
+
+.label-content input {
+  display: flex;
+  justify-content: space-around;
+
 }
 
 #id-imagem {
