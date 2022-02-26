@@ -8,52 +8,77 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo da Trybewarts">
-        <h1 id="trybewarts-header-title">Trybewarts</h1>
-        <form class="trybewarts-login">
-            <input id="email" type="email" name="email" placeholder="Email">
-            <input id="password" type="senha" name="password" placeholder="Senha">
-            <button class="btn-header" type="submit">Entrar</button>
-        </form>
-    </header>
-    <main>
-        <section>
-            <section id="id-formulario">
-                <div id="div-inicio">
-                <h2>Formulário De Avaliação</h2>
-                <form action="" id="evaluation-form">
-                    <label for="">
-                        <input type="text" placeholder="Nome">
-                    </label>
-                    <label for="">
-                        <input type="text" placeholder="Sobrenome">
-                    </label>
-                    <label for="">
-                        <input type="email" name="email" id="" placeholder="Email">
-                    </label>
-                    <label for="house">
-                        Casa: <select name="casas" id="house">
-                            <option text="Gitnória" value="Gitnória" id="gitnoria-house">Gitnória</option>
-                            <option text="Reactpuff" value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-                            <option text="Corvinode" value="Corvinode" id="corvinode-house">Corvinode</option>
-                            <option text="Pytherina" value="Pytherina" id="pytherina-house">Pytherina</option>
-                        </select>
-                    </label>
-                </form>
-                </div>
-                <div id="div-familia">
+    <div id="div-body">
+        <header class="header">
+            <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo da Trybewarts">
+            <h1 id="trybewarts-header-title">Trybewarts</h1>
+            <form class="trybewarts-login">
+                <input id="email" type="email" name="email" placeholder="Email">
+                <input id="password" type="senha" name="password" placeholder="Senha">
+                <button class="btn-header" type="submit">Entrar</button>
+            </form>
+        </header>
+        <main>
+            <section id="section-main">
+                <section id="id-formulario">
+                    <div id="div-inicio">
+                    <h2>Formulário De Avaliação</h2>
+                    <form action="input-name" id="evaluation-form">
+                        <label for="">
+                            <input id="input-name" type="text" placeholder="Nome">
+                        </label>
+                        <label for="input-lastname">
+                            <input id="input-lastname" type="text" placeholder="Sobrenome">
+                        </label>
+                        <label for="input-email">
+                            <input id="input-email" type="email" name="email" id="" placeholder="Email">
+                        </label>
+                        <label for="house">
+                            Casa: <select name="casas" id="house">
+                                <option text="Gitnória" value="Gitnória" id="gitnoria-house">Gitnória</option>
+                                <option text="Reactpuff" value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                                <option text="Corvinode" value="Corvinode" id="corvinode-house">Corvinode</option>
+                                <option text="Pytherina" value="Pytherina" id="pytherina-house">Pytherina</option>
+                            </select>
+                        </label>
+                    </form>
+                    </div>
+                    <div id="div-familia">
 
-                </div>
-                <div id="div-final">
-                    
-                </div>
+                    </div>
+                    <div id="div-final">
+                        <div id="div-input-radio">
+                            <h3>Como você avalia a Trybewarts?</h3>
+                            <input type="radio" name="rate" value="1">1
+                            <input type="radio" name="rate" value="2">2
+                            <input type="radio" name="rate" value="3">3
+                            <input type="radio" name="rate" value="4">4
+                            <input type="radio" name="rate" value="5">5
+                            <input type="radio" name="rate" value="6">6
+                            <input type="radio" name="rate" value="7">7
+                            <input type="radio" name="rate" value="8">8
+                            <input type="radio" name="rate" value="9">9
+                            <input type="radio" name="rate" value="10">10
+                        </div>
+                        <div id="div-textarea">
+                            <label for="textarea">
+                                <h3>Deixe o seu comentário:</h3>
+                                <textarea name="texto" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+                            </label>
+                            <label for="label-infos">Você concorda com o uso das informações acima?
+                            <input type="checkbox" name="" id="agreement">
+                            </label>
+                            <button type="submit" id="submit-btn">Enviar</button>
+                        </div>
+                    </div>
+                </section>
+                <section id="id-imagem">
+                    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="imagem     Trybewarts">
+                </section>
             </section>
-            <section id="id-imagem">
-                <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="imagem Trybewarts">
-            </section>
-        </section>
-    </main>
+        </main>
+        <footer>Direitos reservados à Trybewarts©</footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
