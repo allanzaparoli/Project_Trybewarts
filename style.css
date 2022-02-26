@@ -25,6 +25,7 @@ header h1 {
 
 .trybewarts-login {
   margin-right: 10px;
+  display: flex;
 }
 
 .btn-header {
@@ -46,6 +47,16 @@ main {
   display: flex;
 }
 
+.container-flex {
+  display: flex;
+  
+}
+#id-formulario{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
 #evaluation-form {
   display: flex;
   width: 675px;
@@ -54,9 +65,22 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+  width: 45%;
 }
 
 #id-imagem {
   margin-left: 400px;
+}
+
+#div-familia {
+  display: flex;
+  flex-direction: row;
+}
+
+.label-family,
+.label-content {
+  display: flex;
+  flex-direction: column;
+  
 }
 
