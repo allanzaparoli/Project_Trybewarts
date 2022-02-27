@@ -112,9 +112,8 @@ main {
 .label-content {
   display: flex;
   max-width: 300px;
-  flex-direction: row;
   align-content: space-around;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   min-height: 100px;
 }
 
