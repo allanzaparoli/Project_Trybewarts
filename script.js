@@ -12,3 +12,11 @@ function login() {
   }
 }
 btnLogin.addEventListener('click', login);
+
+$(document).on("keydown", "#TxtObservacoes", function () {
+  var caracteresRestantes = 255;
+  var caracteresDigitados = parseInt($(this).val().length);
+  var caracteresRestantes = caracteresRestantes - caracteresDigitados;
+  
+  $(".caracteres").text(caracteresRestantes);
+});

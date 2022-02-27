@@ -13,8 +13,6 @@
   align-items: center;
 }
 
-
-
 .trybewarts-header-logo {
   width: 5%;
   height: 5%;
@@ -50,7 +48,6 @@ main {
   justify-content: space-around;
   margin-left: 4%;
   font-size: 18px;
-
 }
 
 #id-formulario {
@@ -68,8 +65,6 @@ main {
   height: 500px;
 }
 
-
-
 #div-familia {
   display: flex;
   justify-content: space-around;
@@ -78,37 +73,30 @@ main {
   margin: 16px 0;
 }
 
-.label-family{
+.label-family {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.label-content {
+.div-content {
   display: flex;
   max-width: 300px;
-  flex-direction: row;
-  align-content:space-around ; 
-  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex-flow: row wrap;
   min-height: 100px;
-
-}
-
-.label-content input {
-  display: flex;
-  justify-content: space-around;
-
+  border: 2px red solid;
 }
 
 #id-imagem {
   padding-top: 80px;
-  
 }
 
 #div-input-radio {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  margin-left: -11px;
 }
 
 #div-textarea {
@@ -123,9 +111,11 @@ footer {
   padding: 10px;
 
 }
-.label-content input {
+
+.div-content input {
+  display: flex;
+  justify-content: space-evenly;
   margin-left: 40px;
-  
 }
 
 .input-date {
@@ -140,10 +130,9 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
-h2{
+h2 {
   padding: 20px;
   text-align: center;
   font-size: 32px;
@@ -151,7 +140,7 @@ h2{
 
 #div-inicio div {
   padding: 5px 0;
-} 
+}
 
 #div-inicio input {
   height: 40px;
@@ -162,9 +151,9 @@ h2{
 #div-inicio #input-email {
   height: 40px;
   width: 300px;
-} 
+}
 
-#house{
+#house {
   height: 40px;
   width: 260px;
   font-size: 16px;
@@ -183,13 +172,6 @@ h2{
   margin: 5px 0;
 }
 
-#div-input-radio {
-  margin-left: -11px;
-}
-
 button {
   background-color: blueviolet;
 }
-
-
-
