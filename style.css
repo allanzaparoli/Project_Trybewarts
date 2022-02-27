@@ -102,6 +102,7 @@ main {
 #div-textarea {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 footer {
@@ -174,4 +175,10 @@ h2 {
 
 button {
   background-color: blueviolet;
+}
+
+#counter {
+  position: absolute;
+  right: 5px;
+  bottom: 70px;
 }

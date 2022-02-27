@@ -1,6 +1,12 @@
 const btnLogin = document.querySelector('.btn-header');
 const inputEmail = document.querySelector('#email');
 const inputPassword = document.querySelector('#password');
+const textArea = document.querySelector('#textarea');
+const counter = document.querySelector('#counter');
+const submitBtn = document.querySelector('#submit-btn');
+const agreement = document.querySelector('#agreement');
+
+submitBtn.disabled = true;
 
 function login() {
   const email = inputEmail.value;
@@ -11,12 +17,24 @@ function login() {
     alert('Email ou senha inválidos.');
   }
 }
-btnLogin.addEventListener('click', login);
 
-$(document).on("keydown", "#TxtObservacoes", function () {
-  var caracteresRestantes = 255;
-  var caracteresDigitados = parseInt($(this).val().length);
-  var caracteresRestantes = caracteresRestantes - caracteresDigitados;
-  
-  $(".caracteres").text(caracteresRestantes);
-});
+function counteChars(e) {
+  const inputLength = textArea.value.length;
+  const limit = 500;
+  const rest = limit - inputLength;
+  counter.innerHTML = rest;
+  if (inputLength > 499) {
+    e.preventDefault();
+  }
+}
+
+function submitPrevent() {
+  submitBtn.disabled = false;
+  if (agreement.checked === false) {
+    submitBtn.disabled = true;
+  }
+}
+
+btnLogin.addEventListener('click', login);
+textArea.addEventListener('keyup', counteChars);
+agreement.addEventListener('click', submitPrevent);
