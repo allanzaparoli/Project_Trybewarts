@@ -6,6 +6,7 @@ const counter = document.querySelector('#counter');
 const submitBtn = document.querySelector('#submit-btn');
 const agreement = document.querySelector('#agreement');
 
+
 submitBtn.disabled = true;
 
 function login() {
@@ -38,3 +39,7 @@ function submitPrevent() {
 btnLogin.addEventListener('click', login);
 textArea.addEventListener('keyup', counteChars);
 agreement.addEventListener('click', submitPrevent);
+
+function enviar(event) {
+}
+submitBtn.addEventListener('click', enviar);
